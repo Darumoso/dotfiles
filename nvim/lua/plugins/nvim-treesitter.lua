@@ -1,13 +1,15 @@
 return {
   'nvim-treesitter/nvim-treesitter',
-  -- event = { "BufReadPre", "BufNewFile" },
   lazy = false,
-  branch = 'main',
+  branch = 'master',
   build = ':TSUpdate',
-  opts = {
-    ensure_installed = "all",
-    indent = { enable = true },
-    highlight = { enable = true },
-    folds = { enable = true }
-  }
+  config = function()
+    require('nvim-treesitter.configs').setup({
+      ensure_installed = "all",
+      ignore_install = { "ipkg" },
+      indent = { enable = true },
+      highlight = { enable = true },
+      folds = { enable = true }
+    })
+  end
 }

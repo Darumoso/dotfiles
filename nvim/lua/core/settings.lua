@@ -35,6 +35,7 @@ opt.jumpoptions = 'view'
 
 --Hide bold, italics, etc on norg
 opt.conceallevel = 2
+opt.foldlevel = 99
 
 -- turn off swapfile
 opt.swapfile = false
