@@ -17,8 +17,10 @@ opt.shiftwidth = 2 -- 2 spaces for indent width
 opt.expandtab = true -- expand tab to spaces
 opt.autoindent = true -- copy indent from current line when starting new one
 
+opt.textwidth = 80
+
 opt.list = true --By default, show tabs as ">", trailing spaces as "-", and non-breakable space characters as "+".
-opt.listchars = 'trail:·,nbsp:◇,tab:→ ,extends:▸,precedes:◂'
+opt.listchars = 'trail:·,nbsp:◇,tab:  ,extends:▸,precedes:◂'
 
 opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
 -- Makes neovim and host OS clipboard play nicely with each other
