@@ -5,18 +5,6 @@ css_string = ""
 base = ""
 args = []
 
-[open_bar_command]
-base = "ironbar"
-args = []
-
-[close_bar_command]
-base = "killall"
-args = ["ironbar"]
-
-[reload_bar_command]
-base = "ironbar"
-args = []
-
 [suspend_command]
 base = "systemctl"
 args = ["suspend"]
@@ -24,10 +12,6 @@ args = ["suspend"]
 [lock_command]
 base = "hyprlock"
 args = []
-
-[utility_command]
-base = "playerctl"
-args = ["--all-players", "-a", "pause"]
 
 [get_monitors_command]
 base = "hyprctl"
@@ -52,10 +36,6 @@ args = ["keyword", "monitor", ",disabled"]
 [extend_command]
 base = "hyprctl"
 args = ["keyword", "monitor", ",highres,1920x0,1"]
-
-[mirror_command]
-base = "hyprctl"
-args = ["keyword", "monitor", ",highres,0x0,1"]
 
 [wallpaper_command]
 base = "hyprctl"
